@@ -23,13 +23,6 @@ public class Main2Activity extends Activity {
 
         lessonListView = (ListView) findViewById(R.id.lessonList);
 
-       // lessonsList = new ArrayList<Lesson>();
-
-
-//        for (int i = 1; i < 11; i++) {
-//            lessonsList.add(new Lesson("Урок " + i, "Текст урока номер " + i+ ". В этом уроке мы научимся ..."));
-//        }
-
         appListAdapter = new LessonListAdapter(this, lessonsList);
         lessonListView.setAdapter(appListAdapter);
 
